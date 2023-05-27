@@ -1,12 +1,14 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes ,Route} from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-<Routes>
-  <Route path='/' element={<h1>home</h1>}/>
-  <Route path='/books' element={<h2>Books</h2>} />
-</Routes>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/books" element={<h1>oooks</h1>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

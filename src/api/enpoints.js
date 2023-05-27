@@ -51,14 +51,12 @@ const endpoints = {
       return { type: "POST", url, body };
     },
     refreshToken: function (
-      client_id,
-      client_secret,
       code,
       grant_type = "refresh_token"
     ) {
       const url = baseURL + `/oauth/token`;
       const body = {
-        client_id,
+        CLIENT_ID,
         CLIENT_SECRET,
         code,
         grant_type,

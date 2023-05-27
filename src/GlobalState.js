@@ -3,6 +3,9 @@ import React, { useReducer } from "react";
 const GlobalStateContext = React.createContext();
 
 const initialState = {
+  authData:{
+    
+  },
   items: [],
   total: 0,
 };
